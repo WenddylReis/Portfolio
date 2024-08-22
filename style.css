@@ -1,11 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /*ESTILO GERAL*/
 * {
@@ -29,13 +24,17 @@ body {
   display: flex;
 }
 
+.img-logo {
+  width: 80px;
+}
+
 img {
   width: 270px;
 }
 
 header {
   padding: 40px 7%;
-  margin-right: 13px;
+  margin: 0 50px 0 10px;
 }
 
 header > .interface {
@@ -49,11 +48,15 @@ header a {
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
+  width: 7vw;
 }
 
+.scale {
+  transform: scale(1.5);
+}
 .scale:hover {
-  color: white;
-  transform: scale(1.3);
+  color: rgb(255, 255, 255);
+  transform: scale(1.9);
 }
 
 header nav ul {
@@ -65,7 +68,7 @@ header nav ul li {
   padding: 0 30px;
 }
 
-.botao-contato button {
+.botao-contato button, .botao-curriculo button {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
@@ -82,18 +85,6 @@ header nav ul li {
   box-shadow: 0px 0px 17px rgb(255, 255, 255);
 }
 
-.botao-curriculo button {
-  padding: 10px 40px;
-  font-size: 18px;
-  font-weight: 600;
-  height: 46px;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-  background-color: #a58806;
-  color: rgb(255, 255, 255);
-}
-
 .botao-curriculo button:hover {
   transform: scale(1.08);
   box-shadow: 0px 0px 17px rgb(255, 255, 255);
@@ -106,18 +97,6 @@ header nav ul li {
 }
 
 .titulo span {
-  color: #a58806;
-}
-
-.titulo-entre-contato {
-  color: white;
-  font-size: 35px;
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 40px;
-}
-
-.titulo-entre-contato span {
   color: #a58806;
 }
 
@@ -305,6 +284,8 @@ section.sobre .interface .titulo {
   font-size: 30px;
   margin: 0 5px;
   cursor: pointer;
+  margin-right: 10px;
+  position: relative;
 }
 
 .sobre .botao-social button:hover {
@@ -312,7 +293,29 @@ section.sobre .interface .titulo {
   box-shadow: 0 0 17px white;
 }
 
-@media screen and (max-width: 1114px) {
+.button-git {
+  left: 40%;
+}
+
+.button-linkedin{
+  left: 41%
+}
+
+.button-whatsapp {
+  left: 42%;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;  
+}
+
+.footer {
+  height: 20px;
+}
+
+@media screen and (max-width: 850px) {
   .interface .logo img {
     width: 200px;
     display: none;
@@ -323,9 +326,21 @@ section.sobre .interface .titulo {
   .flex {
     flex-direction: column;
   }
-  .menu-desktop, .botao-contato {
+  .menu-desktop {
     display: none;
   }
+
+  .img-logo {
+    width: 30vw;
+  }
+
+  .botao-contato {
+    padding: 10px 80px 0 5px;
+    width: 30vw;
+    position: absolute;
+    right: 25%;
+  }
+  
   .botao-curriculo {
     text-align: center;
     margin-bottom: 15px;
@@ -433,5 +448,16 @@ section.sobre .interface .titulo {
     font-size: 22px;
     margin: 15px 0;
   }
-  /* FIM ESTILO HARD SKILLS MOBILE */
+  
+  .button-git {
+    left: 20%;
+  }
+  
+  .button-linkedin{
+    left: 21%
+  }
+  
+  .button-whatsapp {
+    left: 22%;
+  }
 }

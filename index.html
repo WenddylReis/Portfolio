@@ -16,11 +16,35 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/41ca728b8c.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--fim import icones-->
+
+    <style>
+        /* Estilo opcional para os elementos h1 e h2 */
+        .h1-automatico1 {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(40) infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        .h1-automatico2, .h2-automatico {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 4s steps(40) infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+    </style>
 </head>
 
 <body>
     <header>
+
         <div class="interface">
+            <img class="img-logo" src="./assets/reis-logo.png">
             <nav class="menu-desktop">
                 <ul>
                     <li><a class="scale" href="index.html">Início</a></li>
@@ -36,6 +60,7 @@
                 </a>
             </div>
         </div>
+
     </header>
 
     <main>
@@ -43,7 +68,8 @@
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>EU SOU WENDDYL REIS <span>DESENVOLVEDOR FRONT-END</span></h1>
+                        <h1 class="h1-automatico1">SOU WENDDYL REIS</h1>
+                        <h1 class="h1-automatico2"><span>DESENVOLVEDOR FRONT-END</span></h1>
                         <p>Estou explorando soluções web e mobile com React, React Native, Node.js e
                             TypeScript.
                             Como entusiasta do Git e GitHub, estou sempre buscando maneiras de colaborar e aprender com
@@ -123,30 +149,35 @@
 
                     <div class="txt-sobre">
 
-                        <h2>OLÁ MUNDO, SAIBA MAIS <span class="sobre-mim-menor"> SOBRE MIM</span></h2>
+                        <h2 class="h2-automatico">OLÁ MUNDO, SAIBA <span class="sobre-mim-menor">MAIS SOBRE MIM</span></h2>
                         <p>Me chamo Wenddyl Reis, tenho 28 anos,
                             resido em Santa Barbara d'Oeste - SP, sou apaixonado por tecnologia,
                             atualmente estou cursando a formação FullStack no DevClub, onde estou aprofundando meus
                             conhecimentos em HTML, CSS e JavaScript.
-                        </p>
+                        </p>                       
                         <p>                        
                         <div class="botao-social">
-                            <a href="https://github.com/WenddylReis"><button><i
+                            <a href="https://github.com/WenddylReis"><button class="button-git"><i
                                         class="fa-brands fa-github"></i></button></a>
-                            <a href="https://www.linkedin.com/in/wenddyl-reis/"><button><i
+                            <a href="https://www.linkedin.com/in/wenddyl-reis/"><button class="button-linkedin"><i
                                         class="fa-brands fa-linkedin"></i></button></a>
-                            <a href="https://api.whatsapp.com/send?phone=5519987159444"><button><i
+                            <a href="https://api.whatsapp.com/send?phone=5519987159444"><button class="button-whatsapp"><i
                                         class="fa-brands fa-whatsapp"></i></button></a>
                         </div>
-                        </p>
+                        </p>                        
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <p>Contato: (19)98715-9444</p>
+        <p>Email: wenddyl.reis@gmail.com</p>
+        <p>Desenvolvido por: <strong>Wenddyl Reis,</strong> Programador Front End</p>
+    </footer>
+    <footer class="footer"></footer>
+
+    <script src="script.js"></script>
 </body>
-
-<script src="script.js"></script>
-
 </html>
 
