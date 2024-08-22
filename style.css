@@ -449,7 +449,13 @@ footer {
     margin: 15px 0;
   }
 
-  .h2-automatico, .p-sobre {
+  .h2-automatico {
+    max-width: 90vw;
+    word-wrap: break-word;
+    display: grid;
+  }
+
+  .sobre {
     max-width: 90vw;
   }
   
