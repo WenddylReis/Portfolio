@@ -448,6 +448,10 @@ footer {
     font-size: 22px;
     margin: 15px 0;
   }
+
+  .h2-automatico, .p-sobre {
+    max-width: 90vw;
+  }
   
   .button-git {
     left: 20%;
@@ -459,5 +463,9 @@ footer {
   
   .button-whatsapp {
     left: 22%;
+  }
+
+  footer {
+    max-width: 90vw;
   }
 }
