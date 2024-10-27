@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--import carrossel-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><!-- fim import carrossel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- fim import carrossel-->
     <link rel="icon" type="image/x-icon" href="./assets/reis-logo.png"><!-- import icon logo-->
     <!-- inicio import css -->
     <link rel="stylesheet" href="./style.css"><!-- fim import css -->
@@ -24,18 +25,32 @@
             overflow: hidden;
             animation: typing 2s steps(40) infinite;
         }
+
         @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
         }
-        .h1-automatico2, .h2-automatico {
+
+        .h1-automatico2,
+        .h2-automatico {
             white-space: nowrap;
             overflow: hidden;
             animation: typing 4s steps(40) infinite;
         }
+
         @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -50,7 +65,7 @@
                     <li><a class="scale" href="index.html">Início</a></li>
                     <li><a class="scale" href="#sobre">Sobre</a></li>
                     <li><a class="scale" href="https://github.com/WenddylReis?tab=repositories">Projetos</a></li>
-                    <li><a class="scale" href="#hardskill">Hard Skills</a></li>
+                    <li><a class="scale" href="#hardskill">Skills</a></li>
                 </ul>
             </nav>
 
@@ -76,7 +91,7 @@
                             a comunidade. Também estou experimentando o Tailwind CSS e Bootstrap para criar interfaces
                             incríveis.</p>
                         <div class="botao-curriculo">
-                            <a href="./Currículo Wenddyl Reis.pdf" download="CURRICULO WENDDYL REIS.pdf">
+                            <a href="./CV-DEV-REIS.pdf" download="CV-DEV-REIS.pdf">
                                 <button>Download CV</button>
                             </a>
                         </div>
@@ -134,6 +149,11 @@
                     </div>
 
                     <div class="especialidade-box">
+                        <i class='bx bxl-mongodb'></i>
+                        <h3>MongoDB</h3>
+                    </div>
+
+                    <div class="especialidade-box">
                         <i class="fa-brands fa-git-alt"></i>
                         <h3>Git</h3>
                     </div>
@@ -149,26 +169,202 @@
 
                     <div class="txt-sobre">
 
-                        <h2 class="h2-automatico">OLÁ MUNDO, SAIBA <span class="sobre-mim-menor">MAIS SOBRE MIM</span></h2>
+                        <h2 class="h2-automatico">OLÁ MUNDO, SAIBA <span class="sobre-mim-menor">MAIS SOBRE MIM</span>
+                        </h2>
                         <p class="p-sobre">Meu nome é Wenddyl Reis, tenho 28 anos,
                             resido em Santa Barbara d'Oeste - SP, e sou apaixonado por tecnologia,
                             atualmente estou cursando a formação FullStack no DevClub, onde estou aprofundando meus
                             conhecimentos em HTML, CSS e JavaScript.
-                        </p>                       
-                        <p>                        
+                        </p>
+                        <p>
                         <div class="botao-social">
                             <a href="https://github.com/WenddylReis"><button class="button-git"><i
                                         class="fa-brands fa-github"></i></button></a>
                             <a href="https://www.linkedin.com/in/wenddyl-reis/"><button class="button-linkedin"><i
                                         class="fa-brands fa-linkedin"></i></button></a>
-                            <a href="https://api.whatsapp.com/send?phone=5519987159444"><button class="button-whatsapp"><i
-                                        class="fa-brands fa-whatsapp"></i></button></a>
+                            <a href="https://api.whatsapp.com/send?phone=5519987159444"><button
+                                    class="button-whatsapp"><i class="fa-brands fa-whatsapp"></i></button></a>
                         </div>
-                        </p>                        
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!--inicio do carrossel portifolio
+
+        <h2  class="titulo-carrossel titulo-desktop">MEU <span>PORTFÓLIO</span></h2>-->
+        <div class="body-pai">
+            <div class="swiper mySwiper">
+                <h2 id="projetos" class="titulo-carrossel titulo-desktop">MEUS <span>PROJETOS</span></h2>
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img class="img-carrossel" src="./assets/Conversor de Moedas.png" />
+                        <h4 class="titulo-carrossel">CONVERSOR DE MOEDAS</h4>
+                        <p class="paragrafo-carrossel">Nessa aplicação basta escolher a moeda que quer converter
+                            inserir os valores e clicar no botão converter. </br></br></br></p>
+                        <div class="botao-github">
+                            <a href="https://wenddylreisconversor.netlify.app" target="_blank"
+                                class="chamar"><button>Projeto</button></a>
+                            <a href="https://github.com/WenddylReis/convert-money" target="_blank"
+                                class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-carrossel" src="./assets/Projeto Shopping.png" />
+                        <h4 class="titulo-carrossel">SHOPPING</h4>
+                        <p class="paragrafo-carrossel"> O Melhor Shopping para você, tenha uma experiência de compras
+                            única com ofertas exclusivas e eventos especiais. </br></br></br></p>
+                        <div class="botao-github">
+                            <a href="https://wenddylreisprojeto4.netlify.app" target="_blank"
+                                class="chamar"><button>Projeto</button></a>
+                            <a href="https://github.com/WenddylReis/projeto4" target="_blank" class="chamar"><button>
+                                    GitHub <i class="fa-brands fa-github"></i> </button></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-carrossel" src="./assets/Projeto Tesla.png" />
+                        <h4 class="titulo-carrossel">TESLA</h4>
+                        <p class="paragrafo-carrossel">Este projeto é uma cópia do site da Tesla, com um formulário para
+                            preencher os dados do cliente.</br></br></br> </p>
+                        <div class="botao-github">
+                            <a href="https://wenddylreistesla.netlify.app" target="_blank"
+                                class="chamar"><button>Projeto</button></a>
+                            <a href="https://github.com/WenddylReis/tesla" target="_blank" class="chamar"><button>
+                                    GitHub <i class="fa-brands fa-github"></i> </button></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-carrossel" src="./assets/Projeto  Carros.png" />
+                        <h4 class="titulo-carrossel">CARROS</h4>
+                        <p class="paragrafo-carrossel">Neste projeto, criei um site de carros com uma estética divertida
+                            e inspirada no universo automobilístico.</br></br></br></br></br></p>
+                        <div class="botao-github">
+                            <a href="https://jogo-da-forca-geral.netlify.app/" target="_blank"
+                                class="chamar"><button>Projeto</button></a>
+                            <a href="https://github.com/diemersonrfernandes/Jogo-Da-Forca" target="_blank"
+                                class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-carrossel" src="./assets/Projeto Netflix.png" />
+                        <h4 class="titulo-carrossel">NETFLIX</h4>
+                        <p class="paragrafo-carrossel">Este projeto é uma cópia do site da Netflix, mostrando o trailer
+                            de uma série, e algumas opções de filmes e series abaixo.</br></br></br></p>
+                        <div class="botao-github">
+                            <a href="https://wenddylreisflix.netlify.app" target="_blank"
+                                class="chamar"><button>Projeto</button></a>
+                            <a href="https://wenddylreisflix.netlify.app" target="_blank" class="chamar"><button> GitHub
+                                    <i class="fa-brands fa-github"></i> </button></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-carrossel" src="./assets/Projeto Jokenpo.png" />
+                        <h4 class="titulo-carrossel">JOKENPÔ</h4>
+                        <p class="paragrafo-carrossel">Famoso jogo de pedra, papel ou tesoura, no qual você escolhe
+                            umas das três opções para jogar contra a maquina. </br></br></br></p>
+                        <div class="botao-github">
+                            <a href="https://wenddylreisjokenpo.netlify.app" target="_blank"
+                                class="chamar"><button>Projeto</button></a>
+                            <a href="https://github.com/WenddylReis/JokenPo" target="_blank" class="chamar"><button>
+                                    GitHub <i class="fa-brands fa-github"></i> </button></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-carrossel" src="./assets/Dev Sorteio.png" />
+                        <h4 class="titulo-carrossel">SORTEADOR DE NÚMEROS</h4>
+                        <p class="paragrafo-carrossel">O usuário escolhe os
+                            números entre o intervalo em que deseja ser sorteado
+                            e clica em sortear, após isso o resultado aparecerá na tela.
+                        </p>
+                        <div class="botao-github">
+                            <a href="https://wenddylreissorteio.netlify.app" target="_blank"
+                                class="chamar"><button>Projeto</button></a>
+                            <a href="https://github.com/WenddylReis/DevSorteio" target="_blank" class="chamar"><button>
+                                    GitHub <i class="fa-brands fa-github"></i> </button></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-carrossel" src="./assets/Projeto Mario.png" />
+                        <h4 class="titulo-carrossel">ENCANADOR MARIO</h4>
+                        <p class="paragrafo-carrossel">Eles estão aqui para salvar o dia! Apresentamos a vocês os
+                            encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi! </br></br> </p>
+                        <div class="botao-github">
+                            <a href="https://wenddylreismario.netlify.app" target="_blank"
+                                class="chamar"><button>Projeto</button></a>
+                            <a href="https://github.com/WenddylReis/mario" target="_blank" class="chamar"><button>
+                                    GitHub <i class="fa-brands fa-github"></i> </button></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-carrossel" src="./assets/Projeto Portfólio.png" />
+                        <h4 class="titulo-carrossel">PORTFÓLIO</h4>
+                        <p class="paragrafo-carrossel">Desenvolvimento de página web com HTML,
+                            CSS e JavaScript, que exibe as qualificações e
+                            conjuntos de projetos realizados. </br></br></br></p>
+                        <div class="botao-github">
+                            <a href="https://wenddylreis.netlify.app" target="_blank"
+                                class="chamar"><button>Projeto</button></a>
+                            <a href="https://github.com/WenddylReis/Portfolio" target="_blank" class="chamar"><button>
+                                    GitHub <i class="fa-brands fa-github"></i> </button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="botao-ver-todos">
+                <a href="https://github.com/diemersonrfernandes?tab=repositories" target="_blank"
+                    class="chamar"><button>
+                        Todos os Projetos <i class="fa-brands fa-github"></i> </button></a>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    effect: "coverflow",
+                    grabCursor: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                    },
+                    loop: true,
+                    centeredSlides: true,
+                    slidesPerView: "auto",
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
+
+
+
+            <!--fim do carrossel portifolio-->
+
+
+
     </main>
     <footer>
         <p>Contato: (19)98715-9444</p>
@@ -179,5 +375,5 @@
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
